@@ -7,12 +7,12 @@ public class Program
     public static void Main(string[] args)
     {
         FahrenheitToCelsius(68); // Test FahrenheitToCelsius Function with a random value
-        CheckForPositiveNegativeZero(-8);
+        CheckForPositiveNegativeZero(9);
         FindMinimum(18, 15, 20);
         FindMaximum(42, 56, 76);
         IsDivisibleBy5(15);
         CheckEvenOrOdd(8);
-        CheckVowelOrConsonant('e');
+        CheckVowelOrConsonant('E');
         DisplayDayOfWeek(6);
         // Test your functions by calling them below:
         // CheckForPositiveNegativeZero(-1); // This should output: "Your number is negative"
