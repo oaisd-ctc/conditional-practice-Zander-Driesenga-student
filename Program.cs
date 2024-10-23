@@ -8,12 +8,12 @@ public class Program
     {
         FahrenheitToCelsius(68); // Test FahrenheitToCelsius Function with a random value
         CheckForPositiveNegativeZero(0);
-        FindMinimum(14, 15, 5);
-        FindMaximum(100, 56, 72);
-        IsDivisibleBy5(8);
-        CheckEvenOrOdd(5);
-        CheckVowelOrConsonant('F');
-        DisplayDayOfWeek(4);
+        FindMinimum(14, 15, 20);
+        FindMaximum(42, 56, 37);
+        IsDivisibleBy5(15);
+        CheckEvenOrOdd(8);
+        CheckVowelOrConsonant('f');
+        DisplayDayOfWeek(0);
         // Test your functions by calling them below:
         // CheckForPositiveNegativeZero(-1); // This should output: "Your number is negative"
         // CheckForPositiveNegativeZero(0); // This should output: "Your number is zero"
