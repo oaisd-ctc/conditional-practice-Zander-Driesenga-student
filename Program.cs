@@ -9,10 +9,11 @@ public class Program
         FahrenheitToCelsius(68); // Test FahrenheitToCelsius Function with a random value
         CheckForPositiveNegativeZero(0);
         FindMinimum(14, 15, 5);
-        FindMaximum(17, 56, 20);
+        FindMaximum(100, 56, 72);
         IsDivisibleBy5(8);
         CheckEvenOrOdd(5);
-        CheckVowelOrConsonant('e');
+        CheckVowelOrConsonant('F');
+        DisplayDayOfWeek(4);
         // Test your functions by calling them below:
         // CheckForPositiveNegativeZero(-1); // This should output: "Your number is negative"
         // CheckForPositiveNegativeZero(0); // This should output: "Your number is zero"
@@ -26,7 +27,7 @@ public class Program
     {
         int numberOne = Math.Min(v1, v2);
         int numberTwo = Math.Min(v3, numberOne);
-        Console.WriteLine(numberTwo);
+        Console.WriteLine($"The minimum value is {numberTwo}");
     }
     public static void IsDivisibleBy5(int number)
     {
@@ -34,8 +35,8 @@ public class Program
         if (answer == 0)
         {
             Console.WriteLine($"{number} is divisible by 5");
-        }
-        else 
+        } 
+        else
         {
             Console.WriteLine($"{number} is not divisible by 5");
         }
@@ -56,6 +57,13 @@ public class Program
             case 'U':
                 Console.WriteLine($"{letter} is a vowel");
                 break;
+            case 'y':
+            case 'Y':
+                Console.WriteLine($"{letter} is sometimes a vowel");
+                break;
+            default:
+                Console.WriteLine($"{letter} is a consonant");
+                break;
         }
     }
     public static void CheckEvenOrOdd(int number)
@@ -74,12 +82,39 @@ public class Program
     {
         int numberOne = Math.Max(v1, v2);
         int numberTwo = Math.Max(v3, numberOne);
-        Console.WriteLine(numberTwo);
+        Console.WriteLine($"The maximum value is {numberTwo}");
     }
     public static void FahrenheitToCelsius(double fahrenheit)
     {
         double celsiusDegree = (fahrenheit - 32) * 5 / 9;
         Console.WriteLine($"{fahrenheit} degrees Fahrenheit is {celsiusDegree} degrees Celsius.");
+    }
+    public static void DisplayDayOfWeek(int day)
+    {
+        switch(day)
+        {
+            case 0:
+                Console.WriteLine("Sunday");
+                break;
+            case 1:
+                Console.WriteLine("Monday");
+                break;
+            case 2:
+                Console.WriteLine("Tuesday");
+                break;
+            case 3:
+                Console.WriteLine("Wednesday");
+                break;
+            case 4:
+                Console.WriteLine("Thursday");
+                break;
+            case 5:
+                Console.WriteLine("Friday");
+                break;
+            case 6:
+                Console.WriteLine("Saturday");
+                break;
+        }
     }
     public static void CheckForPositiveNegativeZero(int number)
     {
@@ -99,3 +134,4 @@ public class Program
     // Define your functions below:
 
 }
+// dotnet run
